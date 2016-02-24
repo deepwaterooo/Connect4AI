@@ -1,0 +1,52 @@
+#+latex_class: cn-article
+#+latex_header: \lstset{language=c++,numbers=left,numberstyle=\tiny,basicstyle=\ttfamily\small,tabsize=4,frame=none,escapeinside=``,extendedchars=false,keywordstyle=\color{blue!70},commentstyle=\color{red!55!green!55!blue!55!},rulesepcolor=\color{red!20!green!20!blue!20!}}
+#+title: AI Connect Four
+#+author: deepwaterooo
+
+* On processing Mini-max algorithm with Alpha-beta pruning for Connect 4 game human vs AI. 
+- Status now: GUI almost there, need to rewrite AI using Java. 
+
+  [[./connect4.png]]
+
+* Rules of the Game
+
+- To what type of object will you add an instance of a PlayListener object (as a Mouse-Listener)?
+
+- If your board has w columns and h rows, how many BoardCell objects do you need to create?   To which component will you add these BoardCell objects?
+
+- Why is the JLabel status an instance variable (as opposed to just a local variable in the constructor)?
+
+- Where is the information about what contents are stored in each cell located?  What method must the BoardCell call in its paintComponent method to determine what color to paint the "checker"?
+
+- Which method will determine when the game is over (by calling methods on the ConnectFourBoard object theBoard)?  Which method will detect illegal moves (again by calling methods on the ConnectFourBoard object theBoard)?
+
+- Will you need to create a separate listener to handle clicks on the New Game button, or will you use another instance of the PlayListener class?
+
+- How do you run the game?
+
+* The Project Architecture
+- Will fill diagrams later
+
+* Designing Your Agent
+- One AI
+- One human player
+
+* Playing Your Agent
+- Either human or AI can play first
+  - Let AI to play a move by clicking "Next Move" button
+  - Human play by clicking the mouse into a specific column
+
+* Further Reading
+
+* Prefix
+- The original Connect 4 AI project was written and finished by Mar 5, 2013, which was my second semester for Computer Science major, so there are lots of defects. 
+- This is a game rewrite using Java to build a graphic interface following major requirements from the initial course project requirements, and UCSD PSA6: Connect 4 GUI requirements, whose reference is listed below. 
+- This is the very FIRST Java project that I built (design was still pretty much there by surfing internet) except the Android App Projecting DrawingFun app, which project's frame work was almost pretty much there and I just added functionality. 
+
+* references
+- mouselistener:
+  - https://www.youtube.com/watch?v=TMWUZ5vzghc
+  - http://bbs.csdn.net/topics/320055502, this one works!
+- requirements
+  - https://sites.google.com/a/eng.ucsd.edu/cse-8b-winter-2014/schedule-and-assignments/psa6
+  - https://github.com/lisalisadong/cs-046
